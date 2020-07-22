@@ -1,8 +1,10 @@
 def esPalindromo(frase):
     """
     Funcion que determina si una frase ingresada es un palindromo.
+
     Args:
         frase (String): Texto correspondiente a la frase a evaluar.
+
     Returns:
         Boolean: Es o no es un palindromo.
     """
