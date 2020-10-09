@@ -1,4 +1,4 @@
-def esPalindromo(frase):
+def es_palindromo(frase):
     """
     Funcion que determina si una frase ingresada es un palindromo.
 
@@ -14,27 +14,30 @@ def esPalindromo(frase):
     else:
         return False
 
+
 def main():
     salir = False
     while not salir:
-        fraseIngresada = input("\nIngrese una frase, oración o palabra: ").strip()
-        largoTexto = len(fraseIngresada) + 25
-        print("\n" + "*" * largoTexto)
-        if esPalindromo(fraseIngresada):
-            print(f"'{fraseIngresada}' SI es un palindromo")
+        frase_ingresada = input("\nIngrese una frase, oración o palabra: ").strip()
+        largo_texto = len(frase_ingresada) + 25
+        print("\n" + "*" * largo_texto)
+        if es_palindromo(frase_ingresada):
+            print(f"'{frase_ingresada}' SI es un palindromo")
         else:
-            print(f"'{fraseIngresada}' NO es un palindromo")
-        print("*" * largoTexto)
+            print(f"'{frase_ingresada}' NO es un palindromo")
+        print("*" * largo_texto)
         while True:
-            desicionSalir = input("\nIngrese una opcion:\n\n1 - Salir\n2 - Continuar e ingresar otra frase\n\nDesea seguir? ")
-            if desicionSalir == "1":
+            desicion_salir = input("\nIngrese una opcion:\n\n1 - Salir\n2 - Continuar e ingresar otra frase\n\n"
+                                   "Desea seguir? ")
+            if desicion_salir == "1":
                 print("\nHasta luego!\n")
                 salir = True
                 break
-            elif desicionSalir == "2":
+            elif desicion_salir == "2":
                 break
             else:
                 print("\nIngrese una opción válida")
+
 
 if __name__ == '__main__':
     main()
