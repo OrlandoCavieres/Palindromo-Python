@@ -8,7 +8,7 @@ def es_palindromo(frase):
     Returns:
         Boolean: Es o no es un palindromo.
     """
-    frase = frase.replace(" ","")
+    frase = frase.replace(" ", "")
     if frase == frase[::-1]:
         return True
     else:
